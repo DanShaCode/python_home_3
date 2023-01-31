@@ -23,14 +23,15 @@ while count < n:
 print()
 print("Созданный список: ", arr)
 
+sum = 0
+index = 0
 
+for i in arr:
+    if index % 2 == 0:
+        index += 1
+    else:
+        sum += i
+        index += 1
 
-# count = 0
-
-# for i in arr:
-#     if count < n:
-#         i = arr.append(int(input("Введите элемент: ", end = "")))
-#         count += 1
-#     else:
-#         print()
-#         print(arr)
+print()
+print("Сумма элементов списка на нечетных позициях списка: ", sum)
