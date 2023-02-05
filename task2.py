@@ -1,6 +1,9 @@
 import random
 
 print()
+print("Данная программа, находит произведение пар чисел списка.")
+
+print()
 list_size = int(input("Введите размер списка: "))
 
 user_list = []

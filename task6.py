@@ -9,7 +9,7 @@ print()
 print("Размер списка задает пользователь.")
 
 print()
-user_size = int(input("Введите размер массива: ")) 
+user_size = int(input("Введите размер списка: ")) 
 print()
 
 user_list = []
