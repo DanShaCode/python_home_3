@@ -11,7 +11,7 @@ user_arr = []
 count = 0
 
 while count < arr_size:
-    i = user_arr.append(random.randint(1, 100))  
+    i = user_arr.append(random.randint(1, 10))  
     count += 1
 
 print()
@@ -57,4 +57,4 @@ else:
         print("Максимально приближенное число: ", minimum)
     elif dif_max == dif_min:
         print()
-        print("Максимально приближенное число: ", minimum)
+        print("Заданное Вами число одинаково близко к числу", minimum, "и к числу", maximum)
