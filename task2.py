@@ -19,24 +19,21 @@ positiveIndex = 0
 minusIndex = -1
 
 len_user_list = len(user_list) 
-half = len_user_list / 2
-iterations = 0
-
-if half % 2 == 0:
-    iterations = int(half) 
-else:
-    iterations = int(half + 1)
+iterations = len_user_list / 2
 
 if iterations % 2 == 0:
-    count = 1
+    count = 0
+    print("Ответ: ", end = " | ")
+    while count < iterations:
+        prod = print(user_list[positiveIndex] * user_list[minusIndex], end = " | ")
+        minusIndex -= 1
+        positiveIndex += 1
+        count += 1
 else:
     count = 0
-
-print("Ответ: ", end = " | ")
-while count < iterations:
-    prod = print(user_list[positiveIndex] * user_list[minusIndex], end = " | ")
-    minusIndex -= 1
-    positiveIndex += 1
-    count += 1
-
-print()
+    print("Ответ: ", end = " | ")
+    while count < iterations:
+        prod = print(user_list[positiveIndex] * user_list[minusIndex], end = " | ")
+        minusIndex -= 1
+        positiveIndex += 1
+        count += 1
