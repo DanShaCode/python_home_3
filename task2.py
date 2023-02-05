@@ -37,3 +37,5 @@ else:
         minusIndex -= 1
         positiveIndex += 1
         count += 1
+
+print()
