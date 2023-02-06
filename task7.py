@@ -25,9 +25,13 @@ for i in user_arr:
         print()
         print("Максимально приближенное число: ", user_number)
         break
-    elif user_number > max(user_arr) or user_number < min(user_arr):
+    elif user_number > max(user_arr):
         print()
-        print("Такого числа в списке нет.")
+        print("Максимально приближенное число: ", max(user_arr))
+        break
+    elif user_number < min(user_arr):
+        print()
+        print("Максимально приближенное число: ", min(user_arr))
         break
 else:
     min_arr = []
